@@ -1,9 +1,31 @@
 /* PC用デザイン */
-@media screen and (min-width: 481px){
+@media screen and (min-width: 481px) {
+  body {
+    background-image: url("../image/patter.jpg");
+    color: white;
+  }
+  #wrapper {
+    position: absolute;
+    width: 100%;
+  }
 
+  /* コンテンツ */
+  .contents {
+    margin: 50px auto;
+    width: 1200px;
+    /* background-color: white; */
+  }
+  .contents h1 {
+    font-size: 68px;
+    text-shadow: 1px 1px 1px rgb(228, 85, 42);
+  }
+  .contents h2 {
+    font-size: 38px;
+    text-shadow: 1px 1px 1px rgb(228, 85, 42);
+  }
 }
 
 /* スマートフォン用デザイン */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
 
 }
