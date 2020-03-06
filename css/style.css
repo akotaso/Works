@@ -13,11 +13,23 @@
   #wrapper nav {
     position: fixed;
     top: 0;
-    right: -300px;
-    width: 300px;
+    right: -200px;
+    width: 200px;
     height: 100%;
     background-color: orange;
+    padding-top: 100px;
     opacity: 0.6;
+  }
+
+  #wrapper nav ul li {
+    padding: 20px 28px;
+  }
+
+  #wrapper nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    text-shadow: 1px 1px 1px rgb(228, 85, 42);
   }
 
   #wrapper .btn-sidenavi {
@@ -73,6 +85,15 @@
     width: 24px;
     -webkit-transform: translate(-7px,-17px) rotate(-45deg);
     transform: translate(-7px,-17px) rotate(-45deg);
+  }
+
+  .copyRight {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    font-size: 14px;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(117, 102, 87);
   }
 
   /* コンテンツ */
