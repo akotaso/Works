@@ -24,4 +24,7 @@ $(function(){
     }
   });
 
+  // //フェードイン
+	// $('.area').fadeInElements();
+
 });

@@ -16,9 +16,9 @@
     right: -200px;
     width: 200px;
     height: 100%;
-    background-color: orange;
+    background-color: rgb(117, 102, 87);
     padding-top: 100px;
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   #wrapper nav ul li {
@@ -27,9 +27,9 @@
 
   #wrapper nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(204, 193, 171);
     font-size: 22px;
-    text-shadow: 1px 1px 1px rgb(228, 85, 42);
+    text-shadow: 1px 1px 1px rgb(65, 57, 54);
   }
 
   #wrapper .btn-sidenavi {
@@ -48,7 +48,7 @@
     position: absolute;
     width: 30px;
     height: 4px;
-    background: orange;
+    background: rgb(117, 102, 87);
     border-radius: 10px;
     -webkit-transition: all 500ms;
     transition: all 500ms;
@@ -72,7 +72,7 @@
 }
 
   #wrapper .btn-sidenavi.open span {
-    background: white;
+    background: rgb(202, 194, 185);
   }
 
   #wrapper .btn-sidenavi.open span:nth-child(1) {
@@ -102,14 +102,28 @@
     width: 1200px;
     /* background-color: white; */
   }
+
   .contents h1 {
     font-size: 68px;
-    text-shadow: 1px 1px 1px rgb(228, 85, 42);
+    color: rgb(196, 166, 132);
+    text-shadow: 5px 5px 3px rgb(114, 95, 82);
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
   }
   .contents h2 {
     font-size: 38px;
     text-shadow: 1px 1px 1px rgb(228, 85, 42);
   }
+
+
+
+
+
+  /* .area {
+    opacity: 0;
+  } */
+
 }
 
 /* スマートフォン用デザイン */
