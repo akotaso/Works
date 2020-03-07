@@ -96,11 +96,116 @@
     text-shadow: 1px 1px 1px rgb(117, 102, 87);
   }
 
+  /* スライド */
+  #wrapper .slider {
+    position: relative;
+    width: 550px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+}
+
+    #wrapper .slider .slider-inner {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 330px
+    }
+
+    #wrapper .slider .slider-inner li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 600ms;
+        transition: all 600ms;
+        pointer-events: none
+    }
+
+    #wrapper .slider .slider-inner li.show {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        z-index: 1;
+        pointer-events: auto
+    }
+
+    #wrapper .slider .slider-inner li img {
+        width: 100%;
+        height: auto
+    }
+
+    #wrapper .slider .nav {
+        width: 100%;
+        text-align: center;
+        font-size: 0;
+        background: #000
+    }
+
+    #wrapper .slider .nav li {
+        display: inline-block;
+        width: 25%;
+        height: 100px;
+        background: #ddd;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        box-sizing: border-box;
+        -webkit-transition: opacity 400ms;
+        transition: opacity 400ms;
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"
+    }
+
+    #wrapper .slider .nav li:hover,#wrapper .slider .nav li.current {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+
+    #wrapper .slider .arrow {
+        position: absolute;
+        top: 50%;
+        font-size: 18px;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background: rgb(196, 166, 132);
+        color: #fff;
+        line-height: 40px;
+        padding: 5px;
+        -webkit-transition: opacity 400ms;
+        transition: opacity 400ms;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #wrapper .slider .arrow:hover {
+        opacity: .7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"
+    }
+
+    #wrapper .slider .arrow#arrow-prev {
+        left: 0!important;
+        -webkit-transform: translate(-100%,-50%)!important;
+        transform: translate(-100%,-50%)!important
+    }
+
+    #wrapper .slider .arrow#arrow-next {
+        left: auto!important;
+        right: 0!important;
+        -webkit-transform: translate(100%,-50%)!important;
+        transform: translate(100%,-50%)!important
+    }
+
+
   /* コンテンツ */
   .contents {
     margin: 50px auto;
     width: 1200px;
-    /* background-color: white; */
   }
 
   .contents h1 {
@@ -108,8 +213,8 @@
     color: rgb(196, 166, 132);
     text-shadow: 5px 5px 3px rgb(114, 95, 82);
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
   .contents h2 {
     font-size: 48px;
@@ -123,6 +228,7 @@
     background: white;
     border-radius: 20px;
     height: 500px;
+    margin-bottom: 320px;
   }
 
   .contents #section02 .section02-inner {
@@ -145,10 +251,45 @@
   }
 
   .contents #section02 .profText{
-    color: black;
+    color: rgb(109, 66, 23);
     float: right;
   }
 
+  .contents #section03 .section-inner {
+    background: white;
+    border-radius: 20px;
+    height: auto;
+  }
+
+  .contents #section03 .slider-furima {
+    margin: 50px 40px;
+    display: flex;
+  }
+
+  .contents #section03 {
+    color: rgb(109, 66, 23);
+  }
+
+  .contents #section03 p{
+    text-align: center;
+    color: rgb(204, 197, 190);
+    margin: 60px 0 60px 0;
+  }
+
+
+  .contents #section03 a{
+    text-decoration: none;
+  }
+
+  .contents #section03 .chat-space {
+    margin: 50px 30px 50px 90px;
+    padding-bottom: 80px;
+    display: flex;
+  }
+
+  .contents #section03 .chat-space_text  {
+    margin-left: 100px;
+  }
   /* .area {
     opacity: 0;
   } */
