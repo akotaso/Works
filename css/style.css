@@ -2,11 +2,16 @@
 @media screen and (min-width: 481px) {
   body {
     background-image: url("../image/patter.jpg");
-    color: white;
+    color:rgb(196, 166, 132);
   }
   #wrapper {
     position: absolute;
     width: 100%;
+  }
+
+  #wrapper a {
+    text-decoration: none;
+    color: rgb(196, 166, 132);
   }
 
   /* ハンバーガーメニュー */
@@ -276,11 +281,6 @@
     margin: 60px 0 60px 0;
   }
 
-
-  .contents #section03 a{
-    text-decoration: none;
-  }
-
   .contents #section03 .chat-space {
     margin: 50px 30px 50px 90px;
     padding-bottom: 80px;
@@ -290,6 +290,28 @@
   .contents #section03 .chat-space_text  {
     margin-left: 100px;
   }
+
+  .contents #section04 .section-inner {
+    background: white;
+    border-radius: 20px;
+    height: auto;
+  }
+
+  .contents #section04 .section-inner04 {
+    margin: 50px 150px 50px 200px;
+    display: flex;
+    padding-bottom: 50px;
+  }
+  .contents #section04 .output {
+    margin-right: 100px;
+  }
+
+  .contents #section04 .twitter {
+    padding: 10px;
+    border: 1px solid rgb(238, 172, 106);
+    border-radius: 30px;
+  }
+
   /* .area {
     opacity: 0;
   } */
