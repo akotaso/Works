@@ -97,7 +97,10 @@ $(function(){
     }
   })
 
-  // //フェードイン
-	// $('.area').fadeInElements();
+  //フェードイン
+	$('.area').fadeInElements({
+    fadeDuration: 1200,
+ 	  // fadePosition: 25
+  });
 
 });
