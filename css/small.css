@@ -32,7 +32,8 @@
     height: 100%;
     background-color: rgb(117, 102, 87);
     padding-top: 100px;
-    opacity: 0.8;
+    opacity: 0.9;
+    z-index: 2;
   }
 
   #wrapper nav ul li {
@@ -113,9 +114,8 @@
   /* スライド */
   #wrapper .slider {
     position: relative;
-    width: 400px;
-    margin: 0 auto 20px;
-    padding: 0 20px;
+    width: 380px;
+    margin: 0 auto 10px;
 }
 
     #wrapper .slider .slider-inner {
@@ -219,7 +219,8 @@
   /* コンテンツ */
   .contents {
     width: 480x;
-    margin-left: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   h1 {
@@ -232,7 +233,6 @@
     line-height: 400px;
     background-image: url("../image/akotasoBgImg.jpg");
     background-size: cover;
-
   }
   .contents h2 {
     font-size: 48px;
@@ -293,7 +293,7 @@
   .contents #section03 .furima-text {
     text-align: center;
     padding-top: 20px;
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .contents #section03 p{
@@ -315,7 +315,7 @@
 
   .contents #section03 .chat-space_text  {
     margin: 30px 40px 0 0;
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .contents #section04 .section-inner {
