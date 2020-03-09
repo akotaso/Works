@@ -14,10 +14,6 @@
     color: rgb(196, 166, 132);
   }
 
-  header {
-
-  }
-
   #wrapper footer {
     width: 100%;
     height: 70px;
@@ -339,7 +335,347 @@
 
 }
 
+
+
+
+
+
+
+
 /* スマートフォン用デザイン */
 @media screen and (max-width: 480px) {
+
+  body {
+    background-image: url("../image/patter.jpg");
+    color:rgb(196, 166, 132);
+  }
+  #wrapper {
+    position: absolute;
+    width: 100%;
+  }
+
+  #wrapper a {
+    text-decoration: none;
+    color: rgb(196, 166, 132);
+  }
+
+  #wrapper footer {
+    width: 1100px;
+    height: 70px;
+    background-color: rgb(102, 76, 52);
+    border-top: 5px solid pink;
+    border-bottom: 5px solid pink;
+  }
+
+  /* ハンバーガーメニュー */
+  #wrapper nav {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(117, 102, 87);
+    padding-top: 100px;
+    opacity: 0.8;
+  }
+
+  #wrapper nav ul li {
+    padding: 20px 28px;
+  }
+
+  #wrapper nav ul li a {
+    text-decoration: none;
+    color: rgb(204, 193, 171);
+    font-size: 22px;
+    text-shadow: 1px 1px 1px rgb(65, 57, 54);
+  }
+
+  #wrapper .btn-sidenavi {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 24px;
+    z-index: 3;
+    cursor: pointer;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+
+  #wrapper .btn-sidenavi span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: rgb(117, 102, 87);
+    border-radius: 10px;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+
+  #wrapper .btn-sidenavi span:nth-child(1) {
+    top: 0;
+  }
+
+  #wrapper .btn-sidenavi span:nth-child(2) {
+    top: 10px;
+  }
+
+  #wrapper .btn-sidenavi span:nth-child(3) {
+    top: 20px;
+  }
+
+  #wrapper .btn-sidenavi.open {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+  #wrapper .btn-sidenavi.open span {
+    background: rgb(202, 194, 185);
+  }
+
+  #wrapper .btn-sidenavi.open span:nth-child(1) {
+    width: 24px;
+    -webkit-transform: translate(-7px,17px) rotate(45deg);
+    transform: translate(-7px,17px) rotate(45deg);
+  }
+
+  #wrapper .btn-sidenavi.open span:nth-child(3) {
+    width: 24px;
+    -webkit-transform: translate(-7px,-17px) rotate(-45deg);
+    transform: translate(-7px,-17px) rotate(-45deg);
+  }
+
+  .copyRight {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    font-size: 14px;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(117, 102, 87);
+  }
+
+  /* スライド */
+  #wrapper .slider {
+    position: relative;
+    width: 550px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+}
+
+    #wrapper .slider .slider-inner {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 330px
+    }
+
+    #wrapper .slider .slider-inner li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        -webkit-transition: all 600ms;
+        transition: all 600ms;
+        pointer-events: none
+    }
+
+    #wrapper .slider .slider-inner li.show {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        z-index: 1;
+        pointer-events: auto
+    }
+
+    #wrapper .slider .slider-inner li img {
+        width: 100%;
+        height: auto
+    }
+
+    #wrapper .slider .nav {
+        width: 100%;
+        text-align: center;
+        font-size: 0;
+        background: #000
+    }
+
+    #wrapper .slider .nav li {
+        display: inline-block;
+        width: 25%;
+        height: 100px;
+        background: #ddd;
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        box-sizing: border-box;
+        -webkit-transition: opacity 400ms;
+        transition: opacity 400ms;
+        opacity: .5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"
+    }
+
+    #wrapper .slider .nav li:hover,#wrapper .slider .nav li.current {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"
+    }
+
+    #wrapper .slider .arrow {
+        position: absolute;
+        top: 50%;
+        font-size: 18px;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background: rgb(196, 166, 132);
+        color: #fff;
+        line-height: 40px;
+        padding: 5px;
+        -webkit-transition: opacity 400ms;
+        transition: opacity 400ms;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #wrapper .slider .arrow:hover {
+        opacity: .7;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"
+    }
+
+    #wrapper .slider .arrow#arrow-prev {
+        left: 0!important;
+        -webkit-transform: translate(-100%,-50%)!important;
+        transform: translate(-100%,-50%)!important
+    }
+
+    #wrapper .slider .arrow#arrow-next {
+        left: auto!important;
+        right: 0!important;
+        -webkit-transform: translate(100%,-50%)!important;
+        transform: translate(100%,-50%)!important
+    }
+
+
+  /* コンテンツ */
+  .contents {
+    width: 1000px;
+    margin-left: 40px;
+  }
+
+  h1 {
+    height: 400px;
+    width: 1100px;
+    font-size: 100px;
+    color: rgb(219, 201, 180);
+    text-shadow: 5px 5px 3px rgb(114, 95, 82);
+    text-align: center;
+    line-height: 500px;
+    background-image: url("../image/akotasoBgImg.jpg");
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .contents h2 {
+    font-size: 48px;
+    text-shadow: 1px 1px 1px rgb(228, 85, 42);
+    color: rgb(196, 166, 132);
+    text-shadow: 2px 2px 2px rgb(114, 95, 82);
+    padding: 30px 0 0 60px;
+  }
+
+  .contents #section02 .section-inner {
+    background: white;
+    border-radius: 20px;
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+
+  .contents #section02 .section02-inner {
+    margin: 50px 25px;
+  }
+
+  .contents #section02 li {
+    font-size: 18px;
+  }
+
+  .contents #section02 .profImg {
+    border: 2px solid rgb(255, 175, 71);
+    border-radius: 130px;
+    float: left;
+    margin-right: 30px;
+  }
+  .contents #section02 .profMenu{
+    color: chocolate;
+    float: left;
+  }
+
+  .contents #section02 .profText{
+    color: rgb(109, 66, 23);
+    float: right;
+  }
+
+  .contents #section03 .section-inner {
+    background: white;
+    border-radius: 20px;
+    height: auto;
+  }
+
+  .contents #section03 .slider-furima {
+    margin: 50px 20px;
+    display: flex;
+  }
+
+  .contents #section03 {
+    color: rgb(109, 66, 23);
+    margin-bottom: 150px;
+  }
+
+  .contents #section03 p{
+    text-align: center;
+    color: rgb(204, 197, 190);
+    margin: 60px 0 60px 0;
+  }
+
+  .contents #section03 .chat-space {
+    margin: 50px 30px 50px 45px;
+    padding-bottom: 80px;
+    display: flex;
+  }
+
+  .contents #section03 .chat-space_text  {
+    margin-left: 40px;
+  }
+
+  .contents #section04 .section-inner {
+    background: white;
+    border-radius: 20px;
+    height: auto;
+    margin-bottom: 100px;
+  }
+
+  .contents #section04 .section-inner04 {
+    margin: 50px 100px 50px 100px;
+    display: flex;
+    padding-bottom: 50px;
+  }
+  .contents #section04 .output {
+    margin-right: 100px;
+  }
+
+  .contents #section04 .twitter {
+    padding: 10px;
+    border: 1px solid rgb(238, 172, 106);
+    border-radius: 30px;
+  }
+
+  /* フェードイン */
+  .area {
+    opacity: 0;
+  }
 
 }
