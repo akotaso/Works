@@ -76,8 +76,8 @@ $(function(){
   // ポップアップ
   $(".popup").colorbox({
     fixed: true,
-    innerWidth: 750,
-    innerHeight: 600,
+    innerWidth: 430,
+    innerHeight: 350,
 
   });
 

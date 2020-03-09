@@ -281,7 +281,7 @@
   }
 
   .contents #section03 .slider-furima {
-    margin: 50px 40px;
+    margin: 50px 0 50px 10px;
     display: flex;
   }
 
@@ -290,6 +290,9 @@
     margin-bottom: 150px;
   }
 
+  .contents #section03 .furima-text {
+    margin-right: 100px;
+  }
   .contents #section03 p{
     text-align: center;
     color: rgb(204, 197, 190);
