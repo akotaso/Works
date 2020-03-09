@@ -32,7 +32,7 @@
     height: 100%;
     background-color: rgb(117, 102, 87);
     padding-top: 100px;
-    opacity: 0.9;
+    opacity: 0.8;
   }
 
   #wrapper nav ul li {
@@ -42,14 +42,14 @@
   #wrapper nav ul li a {
     text-decoration: none;
     color: rgb(204, 193, 171);
-    font-size: 32px;
+    font-size: 22px;
     text-shadow: 1px 1px 1px rgb(65, 57, 54);
   }
 
   #wrapper .btn-sidenavi {
     position: fixed;
     top: 20px;
-    right: 50px;
+    right: 20px;
     width: 30px;
     height: 24px;
     z-index: 3;
@@ -60,7 +60,7 @@
 
   #wrapper .btn-sidenavi span {
     position: absolute;
-    width: 60px;
+    width: 30px;
     height: 4px;
     background: rgb(117, 102, 87);
     border-radius: 10px;
@@ -73,20 +73,32 @@
   }
 
   #wrapper .btn-sidenavi span:nth-child(2) {
-    top: 20px;
+    top: 10px;
   }
 
   #wrapper .btn-sidenavi span:nth-child(3) {
-    top: 40px;
+    top: 20px;
   }
 
   #wrapper .btn-sidenavi.open {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
   #wrapper .btn-sidenavi.open span {
     background: rgb(202, 194, 185);
+  }
+
+  #wrapper .btn-sidenavi.open span:nth-child(1) {
+    width: 24px;
+    -webkit-transform: translate(-7px,17px) rotate(45deg);
+    transform: translate(-7px,17px) rotate(45deg);
+  }
+
+  #wrapper .btn-sidenavi.open span:nth-child(3) {
+    width: 24px;
+    -webkit-transform: translate(-7px,-17px) rotate(-45deg);
+    transform: translate(-7px,-17px) rotate(-45deg);
   }
 
   .copyRight {
