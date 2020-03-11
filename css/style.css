@@ -3,6 +3,7 @@
   body {
     background-image: url("../image/patter.jpg");
     color:rgb(196, 166, 132);
+    font-family: "ぽっくる";
   }
   #wrapper {
     position: absolute;
