@@ -1,5 +1,5 @@
 # about_akotaso(Portfolio)
-![aboutAkotasoTOP](https://user-images.githubusercontent.com/59213808/76163755-45a55400-618c-11ea-97c2-33f04f08b74c.jpg)
+![aboutAkotasoTOP](https://user-images.githubusercontent.com/59213808/76419911-87303c00-63e4-11ea-8308-acc279370562.jpg)
 
 # URL
 http://akotaso.site
