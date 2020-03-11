@@ -9,6 +9,7 @@ http://akotaso.site
 #### Colorbox http://www.jacklmoore.com/colorbox/
 #### Fade-in-Elements-Scroll https://github.com/Ryan8765/Fade-in-Elements-Scroll
 ## Other
+#### WEBfont "ぽっくる"　from: TypeSquare  https://typesquare.com/
 #### twitter Publish https://publish.twitter.com/
 
 # Works
