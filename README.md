@@ -1,4 +1,4 @@
-# about_akotaso(Portfolio)
+# about_akotaso(PortfolioSite)
 ![aboutAkotasoTOP](https://user-images.githubusercontent.com/59213808/76419911-87303c00-63e4-11ea-8308-acc279370562.jpg)
 
 # URL
