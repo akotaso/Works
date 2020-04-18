@@ -17,5 +17,5 @@ http://akotaso.site
 ![slide](https://user-images.githubusercontent.com/59213808/76173282-82e80100-61e1-11ea-9571-ef7b462522fd.gif)
 
 # Other
-自身の趣味、アウトプットなど。ツイッターやっています！よかったら覗いてみてください！
+自身の趣味、アウトプットなど。Twitterやっています！よかったら覗いてみてください！
 ![aboutOther](https://user-images.githubusercontent.com/59213808/76173341-0d306500-61e2-11ea-9f06-21e403b15dfc.gif)
